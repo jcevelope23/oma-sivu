@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier', 'Courier New', Courier, monospace;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.navbar .navbar-brand {
+    font-weight: 600;
+    color: rgb(26, 19, 71);
+    transition: all 0.3s ease;
+
+}
+
+.navbar .navbar-brand:hover {
+    font-weight: 600;
+    color: rgb(93, 71, 154);
+
+}
+
+.navbar {
+    background-color: rgba(241, 183, 234, 0.9);
+    box-shadow: 0 10px 10px rgba(105, 65, 134, 0.9);
+}
+
+.navbar a.nav-link { /* linkin väri ja siirtymä*/
+    color: rgb(26, 19, 71);
+    font-size: 1rem; /* alkuperäinen fonttikoko */
+    font-weight: 600; /*alkuperäinen fontin paksuus*/
+    transition: color 0.3s ease, font-size 0.3s ease; /*tyylimuutosten ns sujuvuus*/
+}
+
+.navbar a.nav-link.hover { /* muutokset kun hiiri on kohdalla*/
+    font-size: 1.1rem; /* fontin koko suurenee */
+    font-weight: 600; /* fontti paksunee */
+    color: rgb(93, 71, 154);
+}
+
+
+.background {
+    background: url('taustakuva.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sertifikaatti {
+    background: url('taustakuva2.jpg') no-repeat center center/cover;
+}
+
+#portfolio {
+    background: url('taustakuva3.jpg') no-repeat center center/cover;
+}
+
+.content-box {
+    background: rgba(241, 183, 234, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(105, 65, 134, 1.5);
+    max-width: 900px;
+    min-height: 500px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: rgb(26, 19, 71);
+}
+
+h1 { font-size: 3.0rem; font-weight: 900; }
+h3 { font-size: 1.5rem; font-weight: 200; }
+
+#sertifikaatti h2,
+#portfolio h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    
+}
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.parallax-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.gallery {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    width: 750px;
+}
+
+.gallery-item:not(:hover) {
+    width: 70px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
