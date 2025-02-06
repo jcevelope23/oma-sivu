@@ -91,6 +91,24 @@ h3 { font-size: 1.5rem; font-weight: 200; }
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+
 .parallax-section {
     min-height: 100vh;
     display: flex;

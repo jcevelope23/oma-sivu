@@ -30,4 +30,12 @@ navbarToggler.addEventListener('click', () => {
     navbarToggler.setAttribute('aria-expanded', navbarNav.classList.toggle('show'));
 });
 
+document.querySelectorAll('.social-link').forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); 
+        const url = link.getAttribute('data-url');
+        window.open(url, '_blank'); // Avaa uuden välilehden
+    });
+});
+
 
