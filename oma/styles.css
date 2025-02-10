@@ -108,6 +108,23 @@ h3 { font-size: 1.5rem; font-weight: 200; }
     transform: scale(1.2);
 }
 
+.email {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(26, 19, 71)
+
+}
+
+.email a {
+    text-decoration: none;
+    color: rgb(93, 71, 154);
+    transition: color o.3s ease;
+}
+
+.email a:hover {
+    color: rgb(155, 100, 200);
+}
 
 .parallax-section {
     min-height: 100vh;
